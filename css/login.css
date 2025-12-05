@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: black;
+    color: gold;
+}
+
+body {
+    /* background-image: linear-gradient(135deg, rgb(167, 142, 3),rgb(86, 0, 0)); */
+    min-height: 100vh;
+    background-image: url(../images/background/login-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+    color: white;
+}
+
+form {
+    /* border: 2px solid red; */
+    width: 370px;
+    /* height: 380px; */
+    /* box-shadow: 0 0 10px 1px gray; */
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    position: relative;
+
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 25px;
+    border: 1px solid black;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    filter: blur(10px);
+
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+}
+
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+div {
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: unset;
+    outline: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    caret-color: gold;
+    font-size: 15px;
+
+
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: white;
+}
+
+.remember-cont {
+
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+
+}
+
+.remember-cont div {
+    all: unset;
+
+}
+
+
+
+
+
+.remember-me {
+    /* border: 2px solid red !important; */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+}
+
+input[type="checkbox"] {
+    margin-top: -1px;
+    outline: none;
+}
+input[type="checkbox"]:checked {
+background-color: green;
+}
+
+
+/* input[type="checkbox"]:checked+p {
+    color: green;
+} */
+
+.remember-me p {
+    display: inline-block;
+
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+    font-weight: bold;
+
+
+}
+
+a:hover{
+    text-decoration: underline red;
+}
+form >p{
+    font-size: 14px;
+    font-family: monospace;
+
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+
+    font-weight: bold;
+    transition: background-color 0.7s;
+}
+
+input[type="submit"]:hover{
+    background-color: greenyellow;
+    
+    cursor: pointer;
+
+}
