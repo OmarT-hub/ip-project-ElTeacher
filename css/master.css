@@ -63,7 +63,7 @@ body {
     grid-row:2/3;
     border: 2px solid red;
 
-    /* height: 500px; */
+    height: 450px;
     position: fixed;
 
     position: sticky;
@@ -101,6 +101,11 @@ h1 {
     flex-grow: 1;
     /* text-align: center; */
 
+}
+
+h1:hover{
+    transition: transform 2s;
+    transform: rotate(-10deg) scale(1.1);
 }
 
 .nav {
@@ -248,4 +253,93 @@ footer ul {
     display: flex;
     gap: 20px;
     /* border: 2px solid red; */
+}
+
+.sidebar{
+
+    padding: 10px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #00767a;
+    color: black;
+ 
+
+
+}
+.sidebar > h2{
+    text-decoration: underline;
+    margin:5px auto 5px auto ;
+    /* border: 1px solid red; */
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 30px; 
+  margin-bottom: 15px;
+  color: rgb(14, 46, 58);
+
+  cursor: pointer;
+}
+.custom-list li:hover {
+
+  color: rgb(139, 2, 2);
+  transform: scale(1.1);
+
+
+}
+
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 20px;   
+  height: 20px;  
+  background-image: url("../images/icon/star.png");
+  background-size: cover;  
+  background-repeat: no-repeat;
+}
+.hr-line{
+    margin: 5px auto;
+    width: 90%;
+    height: 2px;
+    background-color: red;
+}
+
+/* main Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;  
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #a9a9a9;
+  /* border-radius: 10px; */
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: #08a561;
+  /* border-radius: 10px; */
+}
+
+/* subscrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 15px;  
+  height: 10px;
+}
+.sidebar::-webkit-scrollbar-track {
+  background: #a9a9a9;
+  border-radius: 10px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgb(0, 41, 107);
+  border-radius: 10px;
 }
