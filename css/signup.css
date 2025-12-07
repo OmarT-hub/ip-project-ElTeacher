@@ -1,9 +1,229 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(135deg, rgb(3, 167, 69),rgb(0, 85, 86));
+
+body {
+    /* background-image: linear-gradient(135deg, rgb(3, 167, 69), rgb(0, 85, 86)); */
+    background-color: #636075;
     min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+
+}
+
+.main-cont {
+    width: 950px;
+    height: 550px;
+    /* border: 2px solid black; */
+    display: flex;
+    padding: 7px;
+    border-radius: 20px;
+    background-color: #2C2638;
+}
+
+.left {
+    /* border: 2px solid red; */
+
+    width: 50%;
+
+    background-image: url(../images/background/signup-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 20px;
+
+}
+
+
+
+
+.right {
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 60px 50px;
+
+    /* border: 2px solid blue; */
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+.right .header {
+    color: #FBF6FF;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+}
+
+.right .header p {
+    color: #6C6774;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    font-size: 14px;
+}
+
+.header p a {
+    /* text-decoration: none; */
+    color: #6C6774;
+}
+
+form {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.first-name,
+.last-name,
+.email,
+.password {
+    /* all: unset; */
+    background-color: #3C364C;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+.first-name,
+.last-name {
+    width: calc(50% - 7.5px);
+
+
+}
+
+.email,
+.password {
+    width: 100%;
+
+}
+
+.all-inp {
+    border-radius: 5px;
+    height: 35px;
+
+}
+
+.all-inp:focus {
+    outline: 2px solid #EEE9FC;
+}
+
+
+.checkbox-cont {
+    /* border: 2px solid blue; */
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    color: #FDFDFE;
+    font-size: 13px;
+
+}
+
+.checkbox-cont input {
+    margin-right: 10px;
+    font-size: 14px
+}
+
+.checkbox-cont p {
+    display: inline-block;
+}
+
+.checkbox-cont p a {
+    color: #8C3DD0;
+}
+
+form button {
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+
+
+
+    transition: background 0.4s linear;
+
+    background-color: #8C3DD0;
+
+    color: #EEE9FC;
+}
+
+button:hover {
+    background-color: rgba(128, 255, 0, 0.661);
+}
+
+button,
+.account>div {
+    cursor: pointer;
+}
+
+
+.account {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.account>div {
+    flex-grow: 1;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A8A3B5;
+
+    border-radius: 8px;
+    color: #A8A3B5;
+    transition: background 0.4s;
+}
+
+.account>div>img {
+    margin-right: 7px;
+    margin-top: -3px;
+}
+
+.account>div:hover {
+    background-color: #524962;
+}
+
+
+
+/* .hr-line {
+    background-color: #393647;
+    background-color: red;
+    width: 100%;
+    height: 10px;
+} */
+.hr-line {
+    background-color: #A8A3B5;
+    width: 100%;
+    height: 1px;
+
+    /* width: 50px;
+    width: 100%; */
+
+    /* border: 1px solid #A8A3B5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto 20px;
+}
+
+.hr-line::after {
+    content: "Or register with";
+    color: #A8A3B5;
+    background-color: #2C2638;
+    padding: 5px;
 }
