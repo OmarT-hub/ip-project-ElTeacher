@@ -17,14 +17,15 @@
 </head>
 
 <body>
-    <div class="master-cont">
-        <header class="main-header">
+
+    <div class="master-cont" id="top">
+        <header class="main-header" >
             <h1>El-Teacher</h1>
             <ul class="nav">
 
                 <li>Home</li>
-                <li>Contact us</li>
-                <li>Support</li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="help.html">Support</a></li>
 
 
             </ul>
@@ -34,34 +35,534 @@
             </div>
         </header>
 
-        <div class="cont cont1"></div>
-        <div class="cont cont2"></div>
-        <div class="cont cont3"></div>
-        <div class="cont cont4"></div>
-        <div class="cont cont5"></div>
-        <div class="cont cont6"></div>
-        <div class="cont cont7 last"></div>
+        <div class="cont cont1" id="into">
+            <h2>Introduction to Html</h2>
+            <ol class="paragraphs">
+
+                <li>HTML stands for HyperText Markup Language</li>
+                <li>It is the standard language used to create and structure web pages. HTML describes the content of a
+                    webpage using elements called tags, such as headings, paragraphs, images, and links.</li>
+                <li>HTML is not a programming language — it is a markup language, which means it tells the browser how
+                    to display text, images, and other content on the screen.</li>
+                <li>Every HTML page is made of a collection of elements, and each element has an opening tag, content,
+                    and a
+                    closing tag.</li>
+
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <p class="Example">&lt;p&gt;This is a paragraph in HTML.&lt;/p&gt;</p>
+            </div>
+        </div>
+
+
+
+        <div class="cont cont2" id="Basic-Structure">
+            <h2>Basic Structure of an HTML Page</h2>
+            <ol class="paragraphs">
+
+                <li>Every HTML page follows a basic structure that tells the browser how to read and display the
+                    content. This structure consists of several essential elements that define the document type, the
+                    head section, and the body section.</li>
+
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is a simple HTML page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+                </div>
+                <p class="Example">
+
+                    &lt;!DOCTYPE html&gt; – Declares the document type and version of HTML.
+
+                </p>
+                <p class="Example">
+                    &lt;html&gt; – The root element that contains the entire HTML document.
+                </p>
+                <p class="Example ">
+                    &lt;head&gt; – Contains meta-information about the document, like the title, character set, and
+                    links
+                    to CSS or JavaScript files.
+                </p>
+                <p class="Example">
+                    &lt;title&gt; – Sets the title of the webpage, which appears in the browser tab.
+                </p>
+                <p class="Example">
+                    &lt;body&gt; – Contains all the content that is displayed on the webpage, like headings, paragraphs,
+                    images, and links.
+                </p>
+                <p class="Example">
+                    &lt;h1> to &lt;h6> – Heading elements, with &lt;h1> being the largest.
+                </p>
+                <p class="Example">
+                    &lt;p&gt; – Paragraph element for text content.
+                </p>
+            </div>
+
+        </div>
+        <div class="cont cont3" id="Common-Tags">
+            <h2>Common HTML Tags</h2>
+            <ol class="paragraphs">
+                <li>Headings: &lt;h1&gt; to &lt;h6&gt; for titles and headings.</li>
+                <li>Paragraphs: &lt;p&gt; for normal text content.</li>
+                <li>Links: &lt;a href="URL"&gt; for hyperlinks.</li>
+                <li>Images: &lt;img src="URL" alt="Description"&gt; for pictures.</li>
+                <li>Lists: &lt;ul&gt; or &lt;ol&gt; with &lt;li&gt; for list items.</li>
+                <li>Forms: &lt;form&gt; with &lt;input&gt;, &lt;textarea&gt;, &lt;button&gt; for user input.</li>
+                <li>Divs & Spans: &lt;div&gt; for block elements, &lt;span&gt; for inline elements.</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+&lt;img src="image.jpg" alt="Example Image"&gt;
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+            </pre>
+                </div>
+            </div>
+        </div>
+        <div class="cont cont4" id="Headings-Paragraphs">
+
+            <h2>Headings & Paragraphs</h2>
+            <ol class="paragraphs">
+                <li>Headings are defined with &lt;h1&gt; to &lt;h6&gt; tags. &lt;h1&gt; is the largest heading and
+                    &lt;h6&gt; is the smallest.</li>
+                <li>Paragraphs are defined with the &lt;p&gt; tag. They are used to display normal text content on the
+                    page.</li>
+                <li>Using headings and paragraphs properly helps organize content and improve readability.</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;h1&gt;This is Heading 1&lt;/h1&gt;
+&lt;h2&gt;This is Heading 2&lt;/h2&gt;
+&lt;h3&gt;This is Heading 3&lt;/h3&gt;
+
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;p&gt;Another paragraph example.&lt;/p&gt;
+            </pre>
+                </div>
+            </div>
+
+        </div>
+        <div class="cont cont5" id="Links-Images">
+            <h2>Links and Images</h2>
+            <ol class="paragraphs">
+                <li>Links are created using the &lt;a&gt; tag with the <code>href</code> attribute to specify the URL.
+                </li>
+                <li>Images are added using the &lt;img&gt; tag with <code>src</code> for the image URL and
+                    <code>alt</code> for alternative text.
+                </li>
+                <li>Proper use of links and images improves navigation and visual content on a webpage.</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+
+&lt;img src="https://via.placeholder.com/150" alt="Placeholder Image"&gt;
+            </pre>
+                </div>
+            </div>
+
+        </div>
+        <div class="cont cont6" id="Lists">
+            <h2>Lists (ul, ol, li)</h2>
+            <ol class="paragraphs">
+                <li>Unordered lists (<code>&lt;ul&gt;</code>) are used for lists with bullet points.</li>
+                <li>Ordered lists (<code>&lt;ol&gt;</code>) are used for numbered lists.</li>
+                <li>Each item in a list is defined using the <code>&lt;li&gt;</code> tag.</li>
+                <li>Lists help organize information and improve readability on webpages.</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+            </pre>
+                </div>
+            </div>
+
+        </div>
+        <div class="cont cont7 ">
+            <h2>Tables Basics</h2>
+            <ol class="paragraphs">
+                <li>Tables are used to display data in rows and columns.</li>
+                <li>The &lt;table&gt; tag defines a table.</li>
+                <li>&lt;tr&gt; defines a table row, &lt;th&gt; defines a table header, and &lt;td&gt; defines a table
+                    cell.</li>
+                <li>Tables help organize structured data in a readable format on a webpage.</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+    &lt;th&gt;City&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Omar&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+    &lt;td&gt;Cairo&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ahmed&lt;/td&gt;
+    &lt;td&gt;22&lt;/td&gt;
+    &lt;td&gt;Alexandria&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+                </div>
+                <div class="Example">
+
+                    <table border="1">
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                        </tr>
+                        <tr>
+                            <td>Omar</td>
+                            <td>25</td>
+                            <td>Cairo</td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed</td>
+                            <td>22</td>
+                            <td>Alexandria</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="cont cont8 " id="Forms-Inputs">
+            <h2>Forms and Inputs</h2>
+            <ol class="paragraphs">
+                <li>Forms are used to collect user input on a webpage.</li>
+                <li>The &lt;form&gt; tag defines a form, and input fields are added using &lt;input&gt;,
+                    &lt;textarea&gt;, &lt;select&gt;, and &lt;button&gt; tags.</li>
+                <li>Each input type can be text, email, password, checkbox, radio, or submit, depending on the required
+                    user input.</li>
+                <li>Forms help users interact with the website, like signing up, logging in, or submitting data.</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" placeholder="Enter your name"&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" placeholder="Enter your email"&gt;
+
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+                </div>
+            </div>
+            <div class="Example">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="cont cont9 " id="Divs-Spans">
+            <h2>Divs and Spans</h2>
+            <ol class="paragraphs">
+                <li>The &lt;div&gt; tag is a block-level container used to group other HTML elements. It helps organize
+                    the layout of a webpage.</li>
+                <li>The &lt;span&gt; tag is an inline container used to style or group small pieces of content within
+                    other elements, like text inside a paragraph.</li>
+                <li>Using divs and spans allows you to apply CSS styles and structure content efficiently.</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;div class="container"&gt;
+  &lt;h2&gt;This is a heading inside a div&lt;/h2&gt;
+  &lt;p&gt;This is a paragraph with a &lt;span style="color: red;"&gt;highlighted text&lt;/span&gt; inside.&lt;/p&gt;
+&lt;/div&gt;
+            </pre>
+                </div>
+            </div>
+            <div class="Example">
+                <div class="container">
+                    <h2>This is a heading inside a div</h2>
+                    <p>This is a paragraph with a <span style="color: red;">highlighted text</span> inside.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont cont10 " id="Semantic-HTML">
+            <h2>Semantic HTML Elements</h2>
+            <ol class="paragraphs">
+                <li>Semantic HTML elements clearly describe their meaning and purpose in the code, which improves
+                    accessibility and SEO.</li>
+                <li>Examples include:</li>
+                <ul>
+                    <li>&lt;header&gt; – Represents the header of a page or section.</li>
+                    <li>&lt;nav&gt; – Defines a navigation menu.</li>
+                    <li>&lt;main&gt; – Contains the main content of the page.</li>
+                    <li>&lt;section&gt; – Groups related content together.</li>
+                    <li>&lt;article&gt; – Represents an independent, self-contained piece of content.</li>
+                    <li>&lt;aside&gt; – Contains content related to the main content, like sidebars.</li>
+                    <li>&lt;footer&gt; – Represents the footer of a page or section.</li>
+                </ul>
+                <li>Using semantic elements helps browsers, search engines, and developers understand the structure of
+                    your webpage.</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;header&gt;
+  &lt;h1&gt;Website Header&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;p&gt;This is an article.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+
+&lt;aside&gt;
+  &lt;p&gt;Related content goes here.&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;Footer information&lt;/p&gt;
+&lt;/footer&gt;
+            </pre>
+                </div>
+            </div>
+
+        </div>
+        <div class="cont cont11 " id="HTML-Attributes">
+
+            <h2>HTML Attributes</h2>
+            <ol class="paragraphs">
+                <li>HTML attributes provide additional information about an element.</li>
+                <li>Attributes are always written inside the opening tag of an element.</li>
+                <li>Common attributes include:</li>
+                <ul>
+                    <li><code>id</code> – Unique identifier for an element.</li>
+                    <li><code>class</code> – Used to apply CSS styles or select elements with JavaScript.</li>
+                    <li><code>href</code> – URL for a link (&lt;a&gt; tag).</li>
+                    <li><code>src</code> – Source of an image or media file (&lt;img&gt; tag).</li>
+                    <li><code>alt</code> – Alternative text for images (&lt;img&gt; tag).</li>
+                    <li><code>title</code> – Provides extra information when hovering over an element.</li>
+                    <li><code>placeholder</code> – Placeholder text in input fields (&lt;input&gt; tag).</li>
+                </ul>
+                <li>Attributes help customize and control the behavior and appearance of HTML elements.</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;a href="https://www.example.com" title="Go to Example"&gt;Visit Example&lt;/a&gt;
+
+&lt;img src="image.jpg" alt="Example Image" width="200"&gt;
+
+&lt;input type="text" placeholder="Enter your name" class="input-field"&gt;
+            </pre>
+                </div>
+                <div class="Example">
+                    <a href="https://www.example.com" title="Go to Example">Visit Example</a>
+
+                    <img src="image.jpg" alt="Example Image" width="200">
+
+                    <input type="text" placeholder="Enter your name" class="input-field">
+                </div>
+            </div>
+        </div>
+        <div class="cont cont12 " id="Comments-HTML">
+            <h2>Comments in HTML</h2>
+            <ol class="paragraphs">
+                <li>Comments are notes in the HTML code that are not displayed in the browser.</li>
+                <li>They are useful for explaining code, leaving reminders, or temporarily disabling code.</li>
+                <li>Comments start with <code>&lt;!--</code> and end with <code>--&gt;</code>.</li>
+                <li>Browsers ignore comments, so they have no effect on the page display.</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;!-- This is a comment in HTML --&gt;
+
+&lt;p&gt;This paragraph will be displayed.&lt;/p&gt;
+
+&lt;!-- &lt;p&gt;This paragraph will NOT be displayed.&lt;/p&gt; --&gt;
+            </pre>
+                </div>
+            </div>
+            <div class="Example">
+                <!-- This is a comment in HTML -->
+
+                <p>This paragraph will be displayed.</p>
+
+                <!-- <p>This paragraph will NOT be displayed.</p> -->
+            </div>
+
+        </div>
+        <div class="cont cont13 last" id="Example-HTML-Code">
+            <h2>Example HTML Code</h2>
+            <ol class="paragraphs">
+                <li>Here is a complete example of a simple HTML page combining many of the elements we've learned:</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="Examples">
+                <p class="Example-head">Example</p>
+                <div class="Example">
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My First HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;!-- Header Section --&gt;
+&lt;header&gt;
+  &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;!-- Navigation --&gt;
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;!-- Main Content --&gt;
+&lt;main&gt;
+  &lt;section&gt;
+    &lt;h2&gt;Introduction&lt;/h2&gt;
+    &lt;p&gt;This is a paragraph explaining the website.&lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;section&gt;
+    &lt;h2&gt;List Example&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Item One&lt;/li&gt;
+      &lt;li&gt;Item Two&lt;/li&gt;
+      &lt;li&gt;Item Three&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/section&gt;
+
+  &lt;section&gt;
+    &lt;h2&gt;Form Example&lt;/h2&gt;
+    &lt;form&gt;
+      &lt;input type="text" placeholder="Enter your name"&gt;
+      &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;!-- Footer Section --&gt;
+&lt;footer&gt;
+  &lt;p&gt;Copyright &copy; 2025&lt;/p&gt;
+&lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="cont cont14 "></div>
+        <div class="cont cont15 "></div>
+        <div class="cont cont16 last"></div> -->
 
         <div class="sidebar">
             <h2>html Section Titles</h2>
             <ul class="custom-list">
-                <li>Introduction to HTML</li>
-                <li>Basic Structure of an HTML Page</li>
-                <li>Common HTML Tags</li>
-                <li>Headings & Paragraphs</li>
-                <li>Links and Images</li>
-                <li>Lists (ul, ol, li)</li>
-                <li>Tables Basics</li>
-                <li>Forms and Inputs</li>
-                <li>Divs and Spans</li>
-                <li>Semantic HTML Elements</li>
-                <li>HTML Attributes</li>
-                <li>Comments in HTML</li>
-                <li>Example HTML Code</li>
+                <li>
+                    <a href="#into">Introduction to HTML</a>
+                </li>
+                <li>
+                    <a href="#Basic-Structure">Basic Structure of an HTML Page</a>
+                </li>
+                <li><a href="#Common-Tags">Common HTML Tags</a></li>
+                <li><a href="#Headings-Paragraphs">Headings & Paragraphs</a></li>
+                <li><a href="#Links-Images">Links and Images</a></li>
+                <li><a href="#Lists">Lists (ul, ol, li)</a></li>
+                <li><a href="#Table">Tables Basics</a></li>
+                <li><a href="#Forms-Inputs">Forms and Inputs</a></li>
+                <li><a href="#Divs-Spans">Divs and Spans</a></li>
+                <li><a href="#Semantic-HTML">Semantic HTML Elements</a></li>
+                <li><a href="#HTML-Attributes">HTML Attributes</a></li>
+                <li><a href="#Comments-HTML">Comments in HTML</a></li>
+                <li><a href="#Example-HTML-Code">Example HTML Code</a></li>
             </ul>
             <div class="hr-line"></div>
             <h2>CSS Section Titles</h2>
-            <ul class="custom-list">
+            <!-- <ul class="custom-list">
                 <li>Introduction to CSS</li>
                 <li>Ways to Add CSS (Inline, Internal, External)</li>
                 <li>CSS Selectors</li>
@@ -75,12 +576,16 @@
                 <li>Transitions & Hover Effects</li>
                 <li>Class vs ID</li>
                 <li>Example CSS Code</li>
-            </ul>
+            </ul> -->
 
 
 
 
         </div>
+
+        <a href="#top" class="back-to-top">
+            <span>⬆️</span>
+        </a>
         <footer>
             <p>Powered by omarAhmed &copy;2025</p>
             <ul>
@@ -88,7 +593,8 @@
                 <li><a href="#" target="_blank">Youtube</a></li>
                 <li><a href="#" target="_blank">Facebook</a></li>
                 <li><a href="#" target="_blank">X</a></li>
-                <li><a href="#" target="_blank">Contact</a></li>
+                <li><a href="contactus.html" target="_blank">Contact-us</a></li>
+                <li><a href="help.html" target="_blank">Have any problem?</a></li>
             </ul>
 
         </footer>

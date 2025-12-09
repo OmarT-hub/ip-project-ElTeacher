@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(135deg, #1b1988, #70bb768f);
+
+    min-height: 100vh;
+
+    /* background-color: #4c8183; */
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cyan;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: yellow
+        /* text-decoration: solid underline lightcyan ; */
+}
+
+.hr1 {
+    text-align: center;
+    width: 17%;
+    margin-top: -2%;
+    margin-bottom: 40px;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    position: relative;
+    left: 300px;
+    bottom: 81px;
+    border-radius: 20px;
+}
+
+.on {
+    position: relative;
+    bottom: 86px;
+    left: 298px;
+}
+
+form {
+    padding: 20px;
+    margin: 50px 100px;
+    position: relative;
+    left: 10%;
+}
+
+.but {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: brown;
+    color: gold;
+    position: relative;
+
+}
+
+input[type="submit"] {
+    bottom: 69px;
+    left: 622px;
+
+}
+
+input[type="reset"] {
+    bottom: 69px;
+    left: 626px;
+
+}
+
+
+.but:hover {
+    color: rgb(255, 0, 0, 50%);
+    background-color: green;
+}
+
+
+.main {
+    position: relative;
+    top: 17px;
+    left: 14px;
+}
+
+#email {
+    position: relative;
+    left: 20px;
+}
+
+#phone {
+    position: relative;
+    left: 13px;
+}
+
+
+
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid rgb(187, 79, 29);
+    background-color: rgb(102, 63, 78);
+}
+
+textarea::placeholder {
+    color: rgb(59, 148, 143);
+}
