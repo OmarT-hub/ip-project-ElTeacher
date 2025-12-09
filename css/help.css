@@ -1,20 +1,16 @@
 body {
-    background: linear-gradient(135deg, #1b1988, #70bb768f);
-
+    background: linear-gradient(135deg, #1A1A40, #5B0094); 
     min-height: 100vh;
-
-    /* background-color: #4c8183; */
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
-    color: cyan;
+    color: #F8F4E3; 
     overflow: hidden;
 }
 
 h1 {
     text-align: center;
     padding: 10px;
-    color: yellow
-        /* text-decoration: solid underline lightcyan ; */
+    color: #FFD700; 
 }
 
 .hr1 {
@@ -22,6 +18,9 @@ h1 {
     width: 17%;
     margin-top: -2%;
     margin-bottom: 40px;
+    background-color: #FFD700; 
+    height: 1px;
+    border: none;
 }
 
 textarea {
@@ -32,6 +31,9 @@ textarea {
     left: 300px;
     bottom: 81px;
     border-radius: 20px;
+    background-color: #2D2D5E; 
+    color: #F8F4E3;
+    border: 1px solid rgba(255, 215, 0, 0.4);
 }
 
 .on {
@@ -51,30 +53,28 @@ form {
     padding: 10px;
     border-radius: 8px;
     border: none;
-    background-color: brown;
-    color: gold;
+    background-color: #FF6B6B; 
+    color: #F8F4E3; 
     position: relative;
-
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 input[type="submit"] {
     bottom: 69px;
     left: 622px;
-
 }
 
 input[type="reset"] {
     bottom: 69px;
     left: 626px;
-
 }
-
 
 .but:hover {
-    color: rgb(255, 0, 0, 50%);
-    background-color: green;
+    color: #1A1A40; 
+    background-color: #FFD700; 
 }
-
 
 .main {
     position: relative;
@@ -92,16 +92,23 @@ input[type="reset"] {
     left: 13px;
 }
 
-
-
+input[type="email"],
+input[type="tel"] {
+    background-color: #2D2D5E;
+    color: #F8F4E3;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    padding: 10px;
+    border-radius: 8px;
+}
 
 input:focus,
 textarea:focus {
     outline: none;
-    border: 2px solid rgb(187, 79, 29);
-    background-color: rgb(102, 63, 78);
+    border: 2px solid #FF5733; 
+    background-color: #4A4A8A; 
+    color: white;
 }
 
 textarea::placeholder {
-    color: rgb(59, 148, 143);
+    color: #AAAAEE; 
 }
