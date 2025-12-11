@@ -327,7 +327,8 @@ footer ul {
 .custom-list li:hover {
 
     color: rgb(139, 2, 2);
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    transform: translateY(-2px);
 
 
 }
