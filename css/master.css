@@ -225,6 +225,8 @@ button:hover {
     border:2px solid #333 ;
 
     transition: background 0.4s linear;
+
+    display: none;
 }
 .back-to-top:hover{
     background-color: #4f4f4f;
